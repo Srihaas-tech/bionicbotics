@@ -1,3 +1,10 @@
+[project]
+name = "bionicbotics-backend"
+version = "0.1.0"
+description = "FastAPI backend engine for BionicBotics"
+requires-python = ">=3.12"
+dependencies = []
+
 [tool.poetry]
 name = "backend"
 version = "0.1.0"
