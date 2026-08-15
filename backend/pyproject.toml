@@ -11,7 +11,7 @@ dependencies = []
 name = "backend"
 version = "0.1.0"
 description = ""
-authors = ["Abhijit Gupta <avgupta456@gmail.com>"]
+authors = ["Srihaas Mynampati <bpsschool46@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.9,<3.12"
