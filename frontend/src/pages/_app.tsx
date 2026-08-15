@@ -11,6 +11,10 @@ import Script from "next/script";
 import Navbar from "../pagesContent/navbar";
 import "../styles/globals.css";
 
+const SITE_URL = process.env.NEXT_PUBLIC_VERCEL_URL
+  ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
+  : "";
+
 export default function RootLayout({ Component, pageProps }: AppProps) {
   return (
     <div>
@@ -22,11 +26,11 @@ export default function RootLayout({ Component, pageProps }: AppProps) {
         <meta property="og:title" content="Statbotics" />
         <meta property="og:description" content="Modernizing FRC Data Analytics" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.statbotics.io" />
-        <meta property="og:image" content="https://www.statbotics.io/og_spline.png" />
+        <meta property="og:url" content={SITE_URL} />
+        <meta property="og:image" content={`${SITE_URL}/og_spline.png`} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:logo" content="https://www.statbotics.io/circ_favicon.ico" />
+        <meta property="og:logo" content={`${SITE_URL}/circ_favicon.ico`} />
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
