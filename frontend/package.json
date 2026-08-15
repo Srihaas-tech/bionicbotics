@@ -73,5 +73,8 @@
     ],
     "importOrderSeparation": true,
     "importOrderSortSpecifiers": true
+  },
+  "allowScripts": {
+    "sharp@0.31.3": true
   }
 }
