@@ -1,7 +1,7 @@
 const assert = require("node:assert/strict");
 const test = require("node:test");
 
-test("Vercel builds expose production data configuration to the client", () => {
+test("Vercel builds expose same-origin production data configuration to the client", async () => {
   const previousProd = process.env.PROD;
   const previousVercel = process.env.VERCEL;
 
@@ -12,6 +12,13 @@ test("Vercel builds expose production data configuration to the client", () => {
   try {
     const config = require("../next.config.js");
     assert.equal(config.env.PROD, "True");
+    assert.equal(config.env.BUCKET_URL, "/site-data");
+    assert.deepEqual(await config.rewrites(), [
+      {
+        source: "/site-data/:path*",
+        destination: "https://storage.googleapis.com/site_v1/:path*",
+      },
+    ]);
   } finally {
     if (previousProd === undefined) delete process.env.PROD;
     else process.env.PROD = previousProd;
