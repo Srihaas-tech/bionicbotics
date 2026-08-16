@@ -9,6 +9,13 @@ module.exports = {
         xxs: ".625rem",
       },
       colors: {
+        bionic: {
+          50: "#F1F7F4",
+          100: "#DDEBE5",
+          700: "#154733",
+          900: "#092017",
+          lime: "#A7D129",
+        },
         inputBlue: "#2684FF",
         gradientBlue: "#0D37F1",
         gradientRed: "#F50608",
