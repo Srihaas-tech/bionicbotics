@@ -1,1 +1,3 @@
 *.ipynb linguist-documentation
+/frontend/tests/tailwind-config.test.js text eol=lf
+/frontend/tests/typescript-baseline.test.js text eol=lf
