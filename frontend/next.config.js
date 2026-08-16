@@ -12,7 +12,7 @@ const nextConfig = {
     ],
   },
   env: {
-    PROD: process.env.PROD || "false",
+    PROD: process.env.PROD || (process.env.VERCEL === "1" ? "True" : "false"),
   },
 };
 
