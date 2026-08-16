@@ -42,7 +42,7 @@ const NoteworthySection = ({
         {mainHeader}
         {matches.length > 10 && (
           <button
-            className="w-24 p-2 ml-4 rounded bg-blue-500 hover:bg-blue-600 text-white text-sm"
+            className="w-24 p-2 ml-4 rounded bg-bionic-700 hover:bg-bionic-900 text-white text-sm"
             onClick={() => setMore(!more)}
           >
             {more ? "Show Less" : "Show More"}

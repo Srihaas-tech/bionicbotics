@@ -33,7 +33,7 @@ const EventCard = ({ event }: { event: APIEvent }) => {
 
   return (
     <Link href={`/event/${event.key}`}>
-      <div className="h-40 m-2 p-4 rounded flex flex-col border-[1px] shadow hover:bg-blue-100 cursor-pointer">
+      <div className="h-40 m-2 p-4 rounded flex flex-col border-[1px] shadow hover:bg-bionic-100 cursor-pointer">
         <div className="w-full flex-grow text-lg font-bold mb-4">
           {formatEventName(event.name, 45)}
         </div>
@@ -73,7 +73,7 @@ const Summary = ({
               <div className="text-xl md:text-2xl font-bold">{`${name} Events (${count})`}</div>
               {count > cutoffN && (
                 <button
-                  className="w-24 p-2 ml-4 rounded bg-blue-500 hover:bg-blue-600 text-white text-sm"
+                  className="w-24 p-2 ml-4 rounded bg-bionic-700 hover:bg-bionic-900 text-white text-sm"
                   onClick={() => setExpanded(expanded === name ? "" : name)}
                 >
                   {expanded === name ? "Show Less" : "Show More"}

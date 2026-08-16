@@ -60,7 +60,7 @@ const MatchRow = ({
           // rel="noreferrer noopener"
           // target="_blank"
         >
-          <BsPlayCircle className="text-blue-600 hover:text-blue-700 cursor-pointer" />
+          <BsPlayCircle className="text-bionic-700 hover:text-bionic-900 cursor-pointer" />
         </Link>
       )}
     </div>
@@ -70,7 +70,7 @@ const MatchRow = ({
     <Link
       href={`/match/${match.key}`}
       className={classnames(
-        "h-full flex justify-center items-center text-blue-600 hover:text-blue-700 cursor-pointer border-r border-b border-gray-300",
+        "h-full flex justify-center items-center text-bionic-700 hover:text-bionic-900 cursor-pointer border-r border-b border-gray-300",
         stacked ? "w-2/9" : "w-1/7",
         rawTitle && "text-xs lg:text-sm"
       )}
@@ -99,7 +99,7 @@ const MatchRow = ({
               "w-1/3",
               match?.result?.winner === "red" ? "font-bold" : "font-thin",
               team === teamNum ? "underline" : "",
-              "text-blue-600 hover:text-blue-700 cursor-pointer"
+              "text-bionic-700 hover:text-bionic-900 cursor-pointer"
             )}
             key={`${match.key}-${team}`}
           >
@@ -121,7 +121,7 @@ const MatchRow = ({
               "w-1/3",
               match?.result?.winner === "blue" ? "font-bold" : "font-thin",
               team === teamNum ? "underline" : "",
-              "text-blue-600 hover:text-blue-700 cursor-pointer"
+              "text-bionic-700 hover:text-bionic-900 cursor-pointer"
             )}
             key={`${match.key}-${team}`}
           >

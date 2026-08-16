@@ -16,9 +16,6 @@ module.exports = {
           900: "#092017",
           lime: "#A7D129",
         },
-        inputBlue: "#2684FF",
-        gradientBlue: "#0D37F1",
-        gradientRed: "#F50608",
       },
       width: {
         "1/9": "11.11111111111111%",

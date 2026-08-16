@@ -48,7 +48,7 @@ const Page = () => {
           {posts.reverse().map((post) => (
             <div key={`post_${post.url}`} className="w-full p-2">
               <Link href={post.url}>
-                <div className="w-full h-full p-8 rounded-lg bg-gray-100 hover:bg-blue-100">
+                <div className="w-full h-full p-8 rounded-lg bg-gray-100 hover:bg-bionic-100">
                   <div className="w-full text-2xl">{post.title}</div>
                   <div className="w-full text-sm text-gray-500 mb-4">{post.date}</div>
                   <div className="w-full text-base">{post.lead}</div>

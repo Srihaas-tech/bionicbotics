@@ -192,7 +192,7 @@ const OverviewSection = ({ teamYearData }: { teamYearData: TeamYearData | undefi
       <div className="w-full my-4 flex flex-wrap justify-center items-center">
         <strong className="mr-2">Perspective: </strong>
         <div
-          className="mr-4 flex items-center hover:bg-blue-50 p-1 rounded cursor-pointer"
+          className="mr-4 flex items-center hover:bg-bionic-50 p-1 rounded cursor-pointer"
           onClick={() => setAlliance(true)}
         >
           <input
@@ -204,7 +204,7 @@ const OverviewSection = ({ teamYearData }: { teamYearData: TeamYearData | undefi
           <span>Team (Green = Team Won Match)</span>
         </div>
         <div
-          className="flex items-center hover:bg-blue-50 p-1 rounded cursor-pointer"
+          className="flex items-center hover:bg-bionic-50 p-1 rounded cursor-pointer"
           onClick={() => setAlliance(false)}
         >
           <input

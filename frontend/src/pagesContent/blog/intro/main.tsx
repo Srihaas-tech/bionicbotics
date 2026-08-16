@@ -33,7 +33,7 @@ const PageContent = () => {
           href="mailto:avgupta456@gmail.com"
           rel="noopener noreferrer"
           target="_blank"
-          className="not-prose text_link text-blue-500"
+          className="not-prose text_link"
         >
           avgupta456@gmail.com
         </Link>
@@ -56,7 +56,7 @@ const PageContent = () => {
       </p>
       <h3 onClick={() => setShowComparison(!showComparison)} className="cursor-pointer">
         Why not use OPR or Elo?{" "}
-        <span className="text-xs text-blue-500">
+        <span className="text-xs text-bionic-700">
           (Click to {showComparison ? "hide" : "expand"})
         </span>
       </h3>
@@ -71,7 +71,7 @@ const PageContent = () => {
               href="https://blog.thebluealliance.com/2017/10/05/the-math-behind-opr-an-introduction/"
               rel="noopener noreferrer"
               target="_blank"
-              className="not-prose text_link text-blue-500"
+              className="not-prose text_link"
             >
               here
             </Link>
@@ -82,7 +82,7 @@ const PageContent = () => {
               href="https://www.chiefdelphi.com/t/paper-frc-elo-2002-present/154250"
               rel="noopener noreferrer"
               target="_blank"
-              className="not-prose text_link text-blue-500"
+              className="not-prose text_link"
             >
               here
             </Link>
@@ -129,7 +129,7 @@ const PageContent = () => {
       </p>
       <h3 onClick={() => setShowFactors(!showFactors)} className="cursor-pointer">
         What other factors does the EPA model consider?{" "}
-        <span className="text-xs text-blue-500">(Click to {showFactors ? "hide" : "expand"})</span>
+        <span className="text-xs text-bionic-700">(Click to {showFactors ? "hide" : "expand"})</span>
       </h3>
       {showFactors && (
         <p>
@@ -197,7 +197,7 @@ const PageContent = () => {
       </p>
       <h3 onClick={() => setShowAdvantages(!showAdvantages)} className="cursor-pointer">
         Advantages of the EPA model{" "}
-        <span className="text-xs text-blue-500">
+        <span className="text-xs text-bionic-700">
           (Click to {showAdvantages ? "hide" : "expand"})
         </span>
       </h3>
@@ -228,7 +228,7 @@ const PageContent = () => {
       )}
       <h3 onClick={() => setShowDisadvantages(!showDisadvantages)} className="cursor-pointer">
         Disadvantages of the EPA model{" "}
-        <span className="text-xs text-blue-500">
+        <span className="text-xs text-bionic-700">
           (Click to {showDisadvantages ? "hide" : "expand"})
         </span>
       </h3>
@@ -264,7 +264,7 @@ const PageContent = () => {
               href="/docs/python"
               rel="noopener noreferrer"
               target="_blank"
-              className="not-prose text_link text-blue-500"
+              className="not-prose text_link"
             >
               Python
             </Link>{" "}
@@ -273,7 +273,7 @@ const PageContent = () => {
               href="/docs/rest"
               rel="noopener noreferrer"
               target="_blank"
-              className="not-prose text_link text-blue-500"
+              className="not-prose text_link"
             >
               REST
             </Link>{" "}
@@ -315,7 +315,7 @@ const PageContent = () => {
               href="https://www.chiefdelphi.com/t/statbotics-2023-season/423703"
               rel="noopener noreferrer"
               target="_blank"
-              className="not-prose text_link text-blue-500"
+              className="not-prose text_link"
             >
               Chief Delphi thread
             </Link>{" "}

@@ -54,7 +54,7 @@ const Page = () => {
           href="https://blog.thebluealliance.com/2019/02/04/schedule-strengths-1-of-3-finding-the-best-strength-of-schedule-metric/"
           rel="noopener noreferrer"
           target="_blank"
-          className="not-prose text_link text-blue-500"
+          className="not-prose text_link"
         >
           strength of schedule metrics
         </Link>
@@ -68,7 +68,7 @@ const Page = () => {
           href="https://github.com/Team254/cheesy-arena/tree/main/schedules"
           rel="noopener noreferrer"
           target="_blank"
-          className="not-prose text_link text-blue-500"
+          className="not-prose text_link"
         >
           Chezy Arena
         </Link>{" "}

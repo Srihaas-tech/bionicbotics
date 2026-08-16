@@ -215,7 +215,7 @@ const SeasonTable = () => {
                   </tr>
                 );
               })}
-            <tr key="total" className="bg-blue-100 border-double border-t-4 border-gray-500">
+            <tr key="total" className="bg-bionic-100 border-double border-t-4 border-gray-500">
               <td colSpan={2} className="w-32 py-1">
                 <strong>
                   {startYear} - {endYear}
@@ -244,7 +244,7 @@ const SeasonTable = () => {
               })}
             </tr>
             {startYear <= 2015 && endYear > 2015 && (
-              <tr key="recent" className="bg-blue-100">
+              <tr key="recent" className="bg-bionic-100">
                 <td colSpan={2} className="w-32 py-1">
                   <strong>2016 - {endYear}</strong>
                 </td>
@@ -288,7 +288,7 @@ const SeasonTable = () => {
           {Object.keys(methodToName).map((method) => (
             <div
               key={method}
-              className="flex items-center px-1 ml-2 rounded cursor-pointer hover:bg-blue-100"
+              className="flex items-center px-1 ml-2 rounded cursor-pointer hover:bg-bionic-100"
               onClick={() => {
                 if (methods.includes(method)) {
                   setMethods(methods.filter((currMethod) => currMethod !== method));
@@ -315,7 +315,7 @@ const SeasonTable = () => {
           {["acc", "brier"].map((metric) => (
             <div
               key={metric}
-              className="flex items-center px-1 ml-2 rounded cursor-pointer hover:bg-blue-100"
+              className="flex items-center px-1 ml-2 rounded cursor-pointer hover:bg-bionic-100"
               onClick={() => {
                 if (metrics.includes(metric)) {
                   setMetrics(metrics.filter((currMetric) => currMetric !== metric));
@@ -340,14 +340,14 @@ const SeasonTable = () => {
         <div className="flex items-center hover:bg-gray-100 px-4 py-2">
           <div className="font-bold">Show: </div>
           <div
-            className="flex items-center px-1 ml-2 rounded cursor-pointer hover:bg-blue-100"
+            className="flex items-center px-1 ml-2 rounded cursor-pointer hover:bg-bionic-100"
             onClick={() => setChamps(true)}
           >
             <input type="checkbox" className="mr-1" checked={champs} onChange={() => {}} />
             <div className="cursor-pointer">Only Champs</div>
           </div>
           <div
-            className="flex items-center px-1 ml-2 rounded cursor-pointer hover:bg-blue-100"
+            className="flex items-center px-1 ml-2 rounded cursor-pointer hover:bg-bionic-100"
             onClick={() => setChamps(false)}
           >
             <input type="checkbox" className="mr-1" checked={!champs} onChange={() => {}} />

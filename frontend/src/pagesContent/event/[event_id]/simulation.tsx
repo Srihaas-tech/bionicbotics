@@ -261,7 +261,7 @@ const SimulationSection = ({ eventId, data }: { eventId: string; data: EventData
         />
         <p> {simCount === 1 ? "simulation" : "simulations"}.</p>
         <p
-          className="text-blue-500 ml-4 cursor-pointer"
+          className="text-bionic-700 ml-4 cursor-pointer"
           onClick={() => setRefresh((refresh) => refresh + 1)}
         >
           {" "}
@@ -300,7 +300,7 @@ const SimulationSection = ({ eventId, data }: { eventId: string; data: EventData
                 </div>
               )}
               renderThumb={({ props }) => (
-                <div {...props} key="slider-thumb" className="w-6 h-6 bg-blue-800 rounded-full" />
+                <div {...props} key="slider-thumb" className="w-6 h-6 bg-bionic-900 rounded-full" />
               )}
               renderMark={({ props, index }) =>
                 index > 0 &&
@@ -308,7 +308,7 @@ const SimulationSection = ({ eventId, data }: { eventId: string; data: EventData
                   <div
                     {...props}
                     key={`slider-mark-${props.key}`}
-                    className="w-[2px] h-[8px] bg-blue-500 rounded-full"
+                    className="w-[2px] h-[8px] bg-bionic-700 rounded-full"
                   />
                 )
               }

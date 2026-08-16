@@ -22,7 +22,7 @@ export default function Home() {
         <div
           className={classnames(
             "text-2xl sm:text-4xl md:text-5xl font-thin flex flex-col items-center",
-            "text-transparent bg-clip-text bg-gradient-to-r from-gradientRed via-violet-500 to-gradientBlue"
+            "text-transparent bg-clip-text bg-gradient-to-r from-bionic-900 via-bionic-700 to-bionic-900"
           )}
         >
           <div className="mb-1">Modernizing FRC</div>

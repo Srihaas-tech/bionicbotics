@@ -265,7 +265,7 @@ const BubbleChart = ({
           <strong>Note</strong>: {numRemoved} teams have not played yet.
           <div className="ml-2 inline-block">
             <button
-              className="text-blue-500 hover:text-blue-700"
+              className="text-bionic-700 hover:text-bionic-900"
               onClick={() => setShowZero(!showZero)}
             >
               {showZero ? "Hide" : "Show"} teams with no matches

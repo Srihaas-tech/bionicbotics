@@ -283,7 +283,7 @@ const SosSection = ({ eventId, data }: { eventId: string; data: EventData }) => 
         />
         <p> {simCount === 1 ? "simulation" : "simulations"}.</p>
         <p
-          className="text-blue-500 ml-4 cursor-pointer"
+          className="text-bionic-700 ml-4 cursor-pointer"
           onClick={() => setRefresh((refresh) => refresh + 1)}
         >
           {" "}
@@ -293,7 +293,7 @@ const SosSection = ({ eventId, data }: { eventId: string; data: EventData }) => 
       <div className="w-full h-8 mb-4 flex items-center text-sm md:text-base text-center">
         <p className="mr-2">Using EPAs from:</p>
         <div
-          className="mr-4 flex items-center hover:bg-blue-50 p-1 rounded cursor-pointer"
+          className="mr-4 flex items-center hover:bg-bionic-50 p-1 rounded cursor-pointer"
           onClick={() => setPreEvent(true)}
         >
           <input
@@ -305,7 +305,7 @@ const SosSection = ({ eventId, data }: { eventId: string; data: EventData }) => 
           <span>Before Event</span>
         </div>
         <div
-          className="flex items-center hover:bg-blue-50 p-1 rounded cursor-pointer"
+          className="flex items-center hover:bg-bionic-50 p-1 rounded cursor-pointer"
           onClick={() => setPreEvent(false)}
         >
           <input

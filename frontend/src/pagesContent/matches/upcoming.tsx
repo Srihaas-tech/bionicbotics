@@ -24,7 +24,7 @@ const UpcomingMatch = ({ match }: { match: { match: APIMatch; event_name: string
     <div key={match.match.key} className="w-full">
       <div className="w-full flex flex-wrap items-center justify-center text-lg mb-2">
         <Link
-          className="font-bold mr-1 underline text-blue-600 hover:text-blue-700 cursor-pointer"
+          className="font-bold mr-1 underline text-bionic-700 hover:text-bionic-900 cursor-pointer"
           href={`/event/${eventId}`}
         >
           {truncate(match.event_name, 30)}

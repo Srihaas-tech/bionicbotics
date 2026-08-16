@@ -165,7 +165,7 @@ const MatchBreakdown = ({
   const rowClassName = (row: any) =>
     classnames(
       "text-center h-full",
-      row.original.name === "Total" ? "font-bold bg-gray-300" : "hover:bg-blue-100"
+      row.original.name === "Total" ? "font-bold bg-gray-300" : "hover:bg-bionic-100"
     );
 
   const cellClassName = (cell: any) =>
