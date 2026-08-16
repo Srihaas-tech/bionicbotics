@@ -51,7 +51,7 @@ const InsightsTable = ({
 
   const rowClassName = (row: any) =>
     classnames(
-      "text-center h-14 md:hover:bg-blue-100",
+      "text-center h-14 md:hover:bg-bionic-100",
       row?.original?.next_event_key && row?.original?.record === "0-0-0" && "bg-yellow-50", // teams page
       row?.original?.first_event && row?.original?.rank === -1 && "bg-yellow-50" // event page
     );
@@ -67,7 +67,7 @@ const InsightsTable = ({
               <DebounceInput
                 minLength={2}
                 debounceTimeout={300}
-                className="w-36 md:w-60 p-2 relative rounded text-sm border-[2px] border-inputBlue focus:outline-none"
+                className="w-36 md:w-60 p-2 relative rounded text-sm border-[2px] border-bionic-700 focus:outline-none"
                 placeholder="Search"
                 onChange={(e) => setSearch(e.target.value)}
               />

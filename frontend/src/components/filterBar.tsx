@@ -126,7 +126,7 @@ export const FilterBar = ({
           <DebounceInput
             minLength={2}
             debounceTimeout={300}
-            className="w-40 p-2 mb-4 relative rounded text-sm border-[1px] border-gray-200 focus:outline-inputBlue"
+            className="w-40 p-2 mb-4 relative rounded text-sm border-[1px] border-gray-200 focus:outline-bionic-700"
             placeholder="Search"
             onChange={(e) => smartSetFilters("search", e.target.value)}
           />

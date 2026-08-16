@@ -77,7 +77,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex flex-col shadow-md text-gray-100" style={{ background: "#343A40" }}>
+    <div className="w-full flex flex-col shadow-md text-gray-100 bg-bionic-900">
       <div className="body-font sticky top-0 z-50 px-4 py-3 flex">
         <Link href="/" className="flex items-center gap-2 text-xl font-thin mr-8">
           <Image
@@ -158,7 +158,7 @@ const Navbar = () => {
       </div>
       <div
         className={classnames(
-          "pt-0 border-t-[1px] border-gray-500 w-full flex flex-col gap-2",
+          "pt-0 border-t-[1px] border-bionic-700 w-full flex flex-col gap-2",
           "md:hidden", // Hide on desktop
           !toggle && "hidden"
         )}
@@ -176,7 +176,7 @@ const Navbar = () => {
         <Link href="/blog" className="ml-4" onClick={() => setToggle(false)}>
           Blog
         </Link>
-        <div className="my-2 h-[1px] bg-gray-600" />
+        <div className="my-2 h-[1px] bg-bionic-700" />
         <div className="mx-auto">
           <TeamSelect />
         </div>

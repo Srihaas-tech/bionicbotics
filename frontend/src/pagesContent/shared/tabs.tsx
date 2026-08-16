@@ -54,7 +54,7 @@ const TabsSection = ({
                 "w-32 border-t-[1px] border-x-[1px] py-2 rounded-t",
                 currIndex === index
                   ? "text-gray-800 border-gray-200"
-                  : "text-blue-500 hover:text-blue-600 border-white hover:border-gray-200"
+                  : "text-bionic-700 hover:text-bionic-900 border-white hover:border-gray-200"
               )}
               onClick={() => setActiveTab(tab.title)}
             >
