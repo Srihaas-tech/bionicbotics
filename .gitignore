@@ -1,3 +1,4 @@
 cockroach-data
+.worktrees/
 
 .DS_store
