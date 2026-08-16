@@ -11,9 +11,7 @@ const toRgb = (hex) => {
 const luminance = (hex) => {
   const channels = toRgb(hex).map((value) => {
     const normalized = value / 255;
-    return normalized <= 0.03928
-      ? normalized / 12.92
-      : ((normalized + 0.055) / 1.055) ** 2.4;
+    return normalized <= 0.03928 ? normalized / 12.92 : ((normalized + 0.055) / 1.055) ** 2.4;
   });
   return 0.2126 * channels[0] + 0.7152 * channels[1] + 0.0722 * channels[2];
 };
